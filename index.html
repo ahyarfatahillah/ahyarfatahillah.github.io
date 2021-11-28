@@ -65,7 +65,7 @@
             font-size: 11px;
         }
         
-        @media screen and (max-width:600px) {
+        @media screen and (max-width:768px) {
             .marginA{
                 padding-top: 150px;
             }
@@ -82,7 +82,7 @@
                 <div class="col-12 col-md-6 my-auto">
                     <h1>Hi, I'am Achyar Fatahillah</h1>
                     <p>Student</p>
-                    <button type="button" class="btn btn-warning">Download CV</button>
+                    <a type="submit" class="btn btn-warning" href="img/CV_Ahyar.pdf" title="" download>Download CV</a>
                 </div>
                 <div class="col-12 col-md-6 mt-4">
                     <img class="float-start bawah rounded" width="100%" src="https://images.pexels.com/photos/3889218/pexels-photo-3889218.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
@@ -193,19 +193,21 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-6 mb-5">
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Nama</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label">Massage</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-                        <button type="button" class="btn btn-outline-warning">Send</button>
+                        <form action="" method="get">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Nama</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Massage</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-outline-warning">Send</button>
+                        </form>
                     </div>
                 </div>
             </div>

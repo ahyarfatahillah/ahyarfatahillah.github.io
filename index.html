@@ -78,6 +78,12 @@
         .loveI {
             font-size: 11px;
         }
+        .scrolled-down{
+            transform:translateY(-100%); transition: all 0.3s ease-in-out;
+        }
+        .scrolled-up{
+            transform:translateY(0); transition: all 0.3s ease-in-out;
+        }
 
         @media screen and (max-width:768px) {
             .marginA {
@@ -99,12 +105,26 @@
 
 <body>
     <div class="container">
+        <nav class="autohide navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#about">About</a>
+                  <a class="nav-link" href="#education">Education</a>
+                  <a class="nav-link" href="#contact">Contact</a>
+                </div>
+              </div>
+            </div>
+          </nav>
         <div class="bg-dark text-light">
             <div class="row" data-aos="zoom-in">
                 <div class="col-12 col-md-6 my-auto">
                     <h1>Hi, I'am Achyar Fatahillah</h1>
                     <p>Software Developer</p>
-                    <a type="submit" class="btn btn-warning" href="img/CV_ahyarfatahillah.pdf" title="" download>Download CV</a>
+                    <a type="submit" class="btn btn-warning" href="img/CV ahyar 500kb.pdf" title="" download>Download CV</a>
                 </div>
                 <div class="col-12 col-md-6 mt-4">
                     <img class="float-start bawah rounded" width="100%"
@@ -113,7 +133,7 @@
                 </div>
             </div>
         </div>
-        <div class="bg-light mb-5">
+        <div class="bg-light mb-5" id="about">
             <div class="row" data-aos="zoom-in-right">
                 <div class="col-12 col-md-6 my-auto marginA">
                     <h1>About</h1>
@@ -148,7 +168,7 @@
                 </div>
             </div>
         </div>
-        <div class="bg-light text-dark">
+        <div class="bg-light text-dark" id="education">
             <div class="row">
                 <div class="col-12 col-md-6" data-aos="zoom-in-right">
                     <h1>Education</h1>
@@ -208,7 +228,7 @@
         <div class="bg-light text-dark">
             <div class="row pt-4">
                 <div class="col-12 col-lg-6">
-                    <h1 class="pb-2">Contact</h1>
+                    <h1 class="pb-2" id="contact">Contact</h1>
                     <p class="py-3">Keep in Touch with me : )</p>
                     <h4>80% of Success is Showing Up.
                         ~ Grant Cardone</h4>
